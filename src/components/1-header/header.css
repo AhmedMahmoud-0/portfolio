@@ -25,6 +25,10 @@ header.flex nav {
   box-shadow: 1px 1px 40px #2323242a;
 }
 
+.light header.flex nav {
+  background-color: rgb(255, 255, 255);
+}
+
 header ul.flex {
   gap: 16px;
 }
@@ -62,6 +66,34 @@ header button.mode {
   border: 1px solid rgba(244, 165, 96, 0.249);
 }
 
+.light header button.mode,
+.light header button.menu {
+  border: none;
+}
+
+header .menu1 {
+  display: inline-flex;
+  background-color: var(--bgHeader);
+  border-radius: 50%;
+  height: 2.4rem;
+  width: 2.4rem;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(244, 165, 96, 0.249);
+
+  color: var(--subtitle);
+  transition: 0.2s;
+}
+.light header .menu1 {
+  background-color: rgb(255, 255, 255);
+}
+
+header .menu1:hover {
+  color: var(--title);
+  border: 1px solid rgb(244, 165, 96);
+}
+
 header .my-size {
   display: inline-flex;
   background-color: var(--bgHeader);
@@ -70,9 +102,17 @@ header .my-size {
   width: 2.4rem;
   justify-content: center;
   align-items: center;
+
   border: 1px solid rgba(244, 165, 96, 0.249);
+
   color: var(--subtitle);
   transition: 0.2s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+
+.light header .my-size {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 165, 0);
 }
 
 header .my-size:hover {
@@ -150,9 +190,9 @@ header .fixed ul.modal li:first-child {
   margin-bottom: -1rem;
 }
 
-/* =======================
+/* =================================
   4. Responsive Design (media query)
-========================== */
+==================================== */
 @media (max-width: 700px) {
   header.flex nav {
     display: none;

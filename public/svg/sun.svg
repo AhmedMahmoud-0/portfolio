@@ -1,11 +1,11 @@
-<svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <path transform="translate(0 49e-4)" d="M16 12a4 4 0 1 1-4 4 4.0045 4.0045 0 0 1 4-4M16 10a6 6 0 1 0 6 6 6 6 0 0 0-6-6z" />
-    <rect transform="rotate(-45 7.859428 7.855918)" width="1.9998" height="4.958" x="6.8536" y="5.3745" />
-    <rect width="5" height="2" x="2" y="15.0049" />
-    <rect transform="rotate(-45 7.859412 24.148925)" width="4.958" height="1.9998" x="5.3745" y="23.146601" />
-    <rect width="2" height="5" x="15" y="25.0049" />
-    <rect transform="rotate(-45 24.152419 24.148941)" width="1.9998" height="4.958" x="23.146601" y="21.6675" />
-    <rect width="5" height="2" x="25" y="15.0049" />
-    <rect transform="rotate(-45 24.152434 7.855934)" width="4.958" height="1.9998" x="21.6675" y="6.8536" />
-    <rect width="2" height="5" x="15" y="2.0049" />
+<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2" />
+    <path d="M12 20v2" />
+    <path d="M4.93 4.93 6.34 6.34" />
+    <path d="M17.66 17.66l1.41 1.41" />
+    <path d="M2 12h2" />
+    <path d="M20 12h2" />
+    <path d="M6.34 17.66 4.93 19.07" />
+    <path d="M19.07 4.93 17.66 6.34" />
 </svg>

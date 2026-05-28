@@ -4,7 +4,7 @@
 
 1. Left-Section
 2. Right-Section ==> animation
-
+3. Responsive Design (media query)
 
 */
 
@@ -17,6 +17,8 @@ section.hero {
 ========================== */
 section.hero .parent-avatar.flex {
   align-items: end;
+  gap: 0.6rem;
+  min-height: 88px;
 }
 section.hero .left-section {
   flex-grow: 1;
@@ -66,3 +68,18 @@ section.hero .all-icons .icon:hover {
 /* =================================
   2. Right-Section ==> animation
 ==================================== */
+
+section.hero .animation {
+  width: 100%;
+  translate: 100px 55px;
+}
+
+/* ===================================
+  3. Responsive Design (media query)
+====================================== */
+
+@media (max-width: 1250px) {
+  section.hero .animation {
+    display: none;
+  }
+}

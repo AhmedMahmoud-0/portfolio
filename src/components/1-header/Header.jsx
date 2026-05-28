@@ -1,9 +1,22 @@
 // @ts-ignore
 import "./header.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [showmodal, setShowmodal] = useState(false);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("currentMode") ?? "dark",
+  );
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    } else {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    }
+  }, [theme]);
+
   return (
     <header className=" flex">
       <button
@@ -12,7 +25,7 @@ const Header = () => {
         }}
         className="menu"
       >
-        <span className="icon my-size "></span>
+        <span className="icon menu1 "></span>
       </button>
       <div />
 
@@ -36,8 +49,25 @@ const Header = () => {
         </ul>
       </nav>
 
-      <button className="mode ">
-        <span className="icon my-size"></span>
+      <button
+        onClick={() => {
+          // Send value to LS
+          localStorage.setItem(
+            "currentMode",
+            theme === "dark" ? "light" : "dark",
+          );
+
+          // get value from LS
+          // @ts-ignore
+          setTheme(localStorage.getItem("currentMode"));
+        }}
+        className="mode flex"
+      >
+        {theme === "dark" ? (
+          <span className="icon my-size"></span>
+        ) : (
+          <span className="icon my-size"></span>
+        )}
       </button>
 
       {showmodal && (
